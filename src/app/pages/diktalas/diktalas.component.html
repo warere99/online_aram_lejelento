@@ -1,0 +1,22 @@
+<div class="diktalas-component">
+    <p>Az oldalon meg kell adnod a mérőóra azonosítót és a hozzá tartózó mérőóra állást. A 'Küldés' gombbal el tudod menteni.</p>
+    <h1>Áram óraállás lejelentés</h1>
+    <form [formGroup]="diktalasForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+            <mat-label for="oraallas">Mérőóra állás: </mat-label>
+            <input matInput type="string" formControlName="oraallas"/>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="meroora_azonosito">Mérőóra azonosító: </mat-label>
+            <input matInput type="string" formControlName="meroora_azonosito"/>
+        </mat-form-field>
+        
+        <div>
+            <span>
+                <button mat-raised-button color="primary" type="submit">Küldés</button>
+            </span>
+        </div>
+
+
+    </form>
+</div>

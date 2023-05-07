@@ -1,0 +1,8 @@
+<div class="main-component">
+    <h1>Üdvözöllek az áram mérőóra állás bejelentő honlapon!</h1>
+    <span>
+        <button mat-raised-button color="primary" *ngIf="!(loggedInUser)" [routerLink]="'/login'">Belépés</button>
+        <button mat-raised-button color="primary" *ngIf="!(loggedInUser)" [routerLink]="'/regist'">Regisztráció</button>
+    </span>
+</div>
+

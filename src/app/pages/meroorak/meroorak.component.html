@@ -1,0 +1,23 @@
+<div class="meroora-component">
+    <p>Az oldalon új mérőórát tudsz rögztíteni. Az eddig rögzített helyeket a Profil oldalon keresztül tudod megtekinteni.</p>
+    <h1>Mérőóra adatainak megadása</h1>
+    <form [formGroup]="merooraForm" (ngSubmit)="onSubmit()">
+        
+        <mat-form-field>
+            <mat-label for="felhasznalasi_hely_azonosito">Felhasználásihely azonosítószám: </mat-label>
+            <input matInput type="text" formControlName="felhasznalasi_hely_azonosito"/>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="meroora_az">Mérőóra azonosítószám: </mat-label>
+            <input matInput type="text" formControlName="meroora_az"/>
+        </mat-form-field>
+    
+        <div>
+            <span>
+                <button mat-raised-button color="primary" type="submit">Küldés</button>
+            </span>
+        </div>
+
+
+    </form>
+</div>

@@ -1,0 +1,19 @@
+.list-component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+div{
+    margin: 10px;
+}
+
+.table-header-even{
+    background-color: #90e09e;
+}
+
+.tbale-header-odd{
+    background-color: #71b07c;  
+}

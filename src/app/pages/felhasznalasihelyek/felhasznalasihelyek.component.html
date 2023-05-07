@@ -1,0 +1,23 @@
+<div class="felhaszn-component">
+    <p>Az oldalon új felhasználói helyet tudsz rögztíteni. Az eddig rögzített helyeket a Profil oldalon keresztül tudod megtekinteni.</p>
+    <h1>Felhasználói hely megadása</h1>
+    <form [formGroup]="felhasznForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+            <mat-label for="felhasznaloihely_az">Felhasználói hely azonosítószám: </mat-label>
+            <input matInput type="text" formControlName="felhasznaloihely_az"/>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="cim">Felhasználási hely címe: </mat-label>
+            <input matInput type="text" formControlName="cim"/>
+        </mat-form-field>
+        
+
+        <div>
+            <span>
+                <button mat-raised-button color="primary" type="submit">Küldés</button>
+            </span>
+        </div>
+
+
+    </form>
+</div>

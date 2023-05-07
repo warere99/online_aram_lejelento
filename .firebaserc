@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "project-960de": {
+      "hosting": {
+        "project": [
+          "project-960de"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "project-960de"
+  }
+}

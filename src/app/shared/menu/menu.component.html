@@ -1,0 +1,34 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/main" (click)="close()">
+        <mat-icon>grid_view</mat-icon>
+        <span>Főoldal</span>
+    </a>
+    <a mat-list-item routerLink="/regist" (click)="close()">
+        <mat-icon>app_registration</mat-icon>
+        <span>Regisztráció</span>
+    </a>
+    <a mat-list-item routerLink="/login" (click)="close()" *ngIf="!loggedInUser">
+        <mat-icon>login</mat-icon>
+        <span>Bejelentkezés</span>
+    </a>
+    <a mat-list-item routerLink="/ujadat" (click)="close()" *ngIf="loggedInUser">
+        <span>Adat hozzáadás</span>
+    </a>
+    <a mat-list-item routerLink="/diktalas" (click)="close()" *ngIf="loggedInUser">
+        <span>Óraállás lejelentés</span>
+    </a>
+    <a mat-list-item routerLink="/profile" (click)="close()" *ngIf="loggedInUser">
+        <span>Profil oldal</span>
+    </a>
+    <a mat-list-item routerLink="/login" (click)="close(true)" *ngIf="loggedInUser">
+        <mat-icon>logout</mat-icon>
+        <span>Kijelentkezés</span>
+    </a>
+</mat-nav-list>
+
+
+
+
+<!-- <select #pageValue (change)="menuSwitch(pageValue.value)">
+    
+</select> -->
